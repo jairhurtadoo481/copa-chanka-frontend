@@ -57,6 +57,8 @@ export default function DetalleJugadorPage() {
       ? "bg-red-900 text-red-300"
       : "bg-amber-900 text-amber-300";
 
+  const textoEdad = jugador.edad ? `${jugador.edad} a\u00f1os de edad` : null;
+
   return (
     <main className="min-h-screen bg-slate-950 text-white p-8">
       <div className="bg-slate-900 border border-slate-800 rounded-xl p-8 mb-6 flex flex-col sm:flex-row items-center sm:items-start gap-6">
@@ -81,7 +83,7 @@ export default function DetalleJugadorPage() {
           </p>
 
           <div className="flex flex-wrap gap-3 mt-3 justify-center sm:justify-start text-sm text-slate-400">
-            {jugador.edad && <span>{jugador.edad} a\u00f1os de edad</span>}
+            {textoEdad && <span>{textoEdad}</span>}
             {jugador.equipo && (
               <span className="flex items-center gap-2">
                 {jugador.equipo.escudoUrl && (
