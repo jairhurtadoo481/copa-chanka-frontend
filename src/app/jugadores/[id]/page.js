@@ -1,4 +1,4 @@
-"use client";
+ï»¿"use client";
 
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
@@ -81,7 +81,7 @@ export default function DetalleJugadorPage() {
           </p>
 
           <div className="flex flex-wrap gap-3 mt-3 justify-center sm:justify-start text-sm text-slate-400">
-            {jugador.edad && <span>{jugador.edad} años</span>}
+            {jugador.edad && <span>{jugador.edad} anios de edad</span>}
             {jugador.equipo && (
               <span className="flex items-center gap-2">
                 {jugador.equipo.escudoUrl && (
